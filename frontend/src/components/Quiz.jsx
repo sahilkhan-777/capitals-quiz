@@ -37,7 +37,7 @@ function Quiz() {
     }
 
     if (question.length === 0) {
-        return <h2>No questions available</h2>;
+        return <h2>Loading...</h2>;
     }
 
     return (
