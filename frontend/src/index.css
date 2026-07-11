@@ -1,0 +1,6 @@
+body{
+    background: url('./assets/world-bg.webp');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}

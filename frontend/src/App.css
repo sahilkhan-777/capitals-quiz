@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+@font-face {
+  font-family: Moho;
+  src: url("./assets/fonts/moho-std-condensed-bold.otf") format("truetype");
+}
+
+:root {
+  --bg-clr: rgba(254, 205, 14, 0.3);
+  --text-clr: #1f2937;
+  --accent-clr: rgb(72, 142, 216);
+  --main-font: "Moho", sans-serif;
+  --sub-font: "Open Sans", sans-serif;
+}
+
+body {
+  color: var(--text-clr);
+  font-family: var(--sub-font);
+}
+
+.loading-text {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 20px;
+  font-family: var(--main-font);
+  letter-spacing: 0.5px;
+}
+
+.title {
+  font-size: 4.5rem;
+  text-align: center;
+  color: var(--text-clr);
+  font-family: var(--main-font);
+  letter-spacing: 0.5px;
+}
+
+.quiz-form {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  background: var(--bg-clr);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--bg-clr);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  transform-style: preserve-3d;
+  /* animation: float 6s ease-in-out infinite; */
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+}
+
+.quiz-form h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-family: var(--main-font);
+  letter-spacing: 1px;
+}
+
+.quiz-form p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.quiz-form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 2px solid var(--bg-clr);
+  border-radius: 10px;
+  font-family: var(--sub-font);
+  font-size: 1.2rem;
+}
+
+.quiz-form input:focus {
+  outline: none;
+  border-color: var(--accent-clr);
+}
+
+.submit-button {
+  padding: 12px 24px;
+  font-size: 1.5rem;
+  background-color: var(--accent-clr);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #244c7a;
+}
+
+footer{
+    text-align: center;
+    /* padding: 10px; */
+    font-size: 1.2rem;
+}
