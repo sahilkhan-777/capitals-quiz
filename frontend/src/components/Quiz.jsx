@@ -41,6 +41,9 @@ function Quiz() {
       }, 1000);
     } else {
       setMessage(`Incorrect! The correct answer is ${question[index].capital}`);
+      setTimeout(() => {
+        setMessage("");
+      }, 1000);
     }
   }
 
