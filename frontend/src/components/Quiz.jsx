@@ -15,7 +15,7 @@ function Quiz() {
 
   useEffect(() => {
     async function fetchQuestion() {
-      const response = await fetch("http://localhost:3000/");
+      const response = await fetch("https://capitals-quiz-y6eo.onrender.com");
       const data = await response.json();
       setQuestion(data);
     }
